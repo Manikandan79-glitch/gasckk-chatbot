@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </radialGradient>
+
+    <!-- Claude Warm Terracotta Gradients -->
+    <linearGradient id="claudeCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28C68" />
+      <stop offset="50%" stop-color="#D97757" />
+      <stop offset="100%" stop-color="#B8593B" />
+    </linearGradient>
+
+    <linearGradient id="claudeAmber" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97757" />
+      <stop offset="100%" stop-color="#E8A87C" />
+    </linearGradient>
+
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE181" />
+      <stop offset="100%" stop-color="#D97757" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Container -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)" stroke="#292524" stroke-width="3" />
+
+  <!-- Center Claude-Style Geometric Academic Starburst -->
+  <g transform="translate(256, 210)" filter="url(#softGlow)">
+    <!-- Outer Radiating Rays (Knowledge Aura) -->
+    <g opacity="0.35" stroke="url(#claudeCoral)" stroke-width="2.5" stroke-linecap="round">
+      <line x1="0" y1="-115" x2="0" y2="-95" />
+      <line x1="0" y1="95" x2="0" y2="115" />
+      <line x1="-115" y1="0" x2="-95" y2="0" />
+      <line x1="95" y1="0" x2="115" y2="0" />
+      <line x1="-80" y1="-80" x2="-66" y2="-66" />
+      <line x1="66" y1="66" x2="80" y2="80" />
+      <line x1="80" y1="-80" x2="66" y2="-66" />
+      <line x1="-66" y1="66" x2="-80" y2="80" />
+    </g>
+
+    <!-- Anthropic-Style 12-Ray Organic Asterisk Spark -->
+    <g fill="url(#claudeCoral)">
+      <!-- Vertical Petal -->
+      <path d="M-8,-75 C-8,-88 8,-88 8,-75 L7,-25 C7,-15 -7,-15 -7,-25 Z" />
+      <path d="M-8,75 C-8,88 8,88 8,75 L7,25 C7,15 -7,15 -7,25 Z" />
+      <!-- Horizontal Petal -->
+      <path d="M-75,-8 C-88,-8 -88,8 -75,8 L-25,7 C-15,7 -15,-7 -25,-7 Z" />
+      <path d="M75,-8 C88,-8 88,8 75,8 L25,7 C15,7 15,-7 25,-7 Z" />
+      <!-- Diagonal Petals -->
+      <g transform="rotate(45)">
+        <path d="M-7,-65 C-7,-76 7,-76 7,-65 L6,-22 C6,-13 -6,-13 -6,-22 Z" opacity="0.9" />
+        <path d="M-7,65 C-7,76 7,76 7,65 L6,22 C6,13 -6,13 -6,22 Z" opacity="0.9" />
+        <path d="M-65,-7 C-76,-7 -76,7 -65,7 L-22,6 C-13,6 -13,-6 -22,-6 Z" opacity="0.9" />
+        <path d="M65,-7 C76,-7 76,7 65,7 L22,6 C13,6 13,-6 22,-6 Z" opacity="0.9" />
+      </g>
+    </g>
+
+    <!-- Central Academic Open Book Motif Interwoven -->
+    <path d="M-42,15 C-22,8 -8,12 0,22 C8,12 22,8 42,15 L42,50 C22,43 8,46 0,55 C-8,46 -22,43 -42,50 Z" 
+          fill="none" stroke="url(#goldGlow)" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M0,22 L0,55" stroke="url(#goldGlow)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Sleek Minimalist Graduation Cap Above Central Node -->
+    <path d="M0,-35 L42,-18 L0,-1 L-42,-18 Z" fill="#1c1917" stroke="url(#claudeAmber)" stroke-width="4" stroke-linejoin="round" />
+    <path d="M28,-12 L28,6 C28,10 32,12 34,12" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="34" cy="14" r="2.5" fill="#FCE181" />
+  </g>
+
+  <!-- Typography: Warm Editorial Claude Style -->
+  <text x="256" y="380" 
+        text-anchor="middle" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Georgia', serif" 
+        font-size="34" 
+        font-weight="800" 
+        letter-spacing="5" 
+        fill="#FAF5F0">
+    GASCKK AI
+  </text>
+
+  <!-- Subtitle -->
+  <text x="256" y="415" 
+        text-anchor="middle" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="13" 
+        font-weight="600" 
+        letter-spacing="3" 
+        fill="#D97757">
+    ACADEMIC ASSISTANT
+  </text>
+
+  <!-- College Location Tag -->
+  <text x="256" y="445" 
+        text-anchor="middle" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="11" 
+        font-weight="500" 
+        letter-spacing="1.5" 
+        fill="#78716C">
+    PALKULAM • MSU AFFILIATED
+  </text>
+</svg>
